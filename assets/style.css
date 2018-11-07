@@ -19,16 +19,15 @@ body {
   max-width: 960px;
 }
 
-/* ....Bootstrap For Uneven Columns.... */
 .col-lg-6{
   padding: 30px;
   margin: 0 0 40px 0;
   width: 100%;
   max-width:960px;
-  float: left;
+  float: center;
   background: #fff;
   border: 1px solid #ddd;
-  margin: 20px 0 40px 230px; 
+  margin: inherit; 
 }
 
 /* ....The Header, Logo, And Nav Buttons.... */
@@ -118,7 +117,7 @@ h3 {
 }
 .main-section {
   padding: 30px;
-  margin: 0 0 40px 0;
+  margin: 0 0 0px 0;
   width: 100%;
   float: left;
   background: #fff;
@@ -204,4 +203,66 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* ....media query.... */
+@media only screen and (max-width: 980px) {
+  .container {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+  }
+  
+  .col-lg-6{
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width:980px;
+    float: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: inherit; 
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 768px;
+  }
+  
+  .col-lg-6{
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width:768px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: inherit; 
+}
+}  
+
+@media only screen and (max-width: 640px) {
+
+.container {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+}
+
+.col-lg-6{
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 100%;
+  max-width:640px;
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: inherit; 
+}
 }
